@@ -6,6 +6,10 @@ import org.openqa.selenium.WebElement;
 
 import java.util.Random;
 
+/**
+ * Create by Ewan.Hardingham on the 5th Nov 2019
+ */
+
 public class SignInPage extends SourcePage {
 
     private static final StringBuilder BUILDER = new StringBuilder();
@@ -21,6 +25,7 @@ public class SignInPage extends SourcePage {
         super(driver);
     }
 
+    //A new email is required each time the registration method is ran else test will fail
     public String generateTestEmail() {
         BUILDER.append("@testemail.com");
         for (int i = 0; i < 10; i++) {

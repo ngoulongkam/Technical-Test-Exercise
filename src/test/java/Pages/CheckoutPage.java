@@ -4,6 +4,10 @@ import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+/**
+ * Create by Ewan.Hardingham on the 5th Nov 2019
+ */
+
 public class CheckoutPage extends SourcePage {
 
     private static final By PROCEED_TO_CART_BUTTON = By.cssSelector("div.shopping_cart > a");

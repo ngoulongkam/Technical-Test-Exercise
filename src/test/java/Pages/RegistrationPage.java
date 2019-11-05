@@ -4,6 +4,10 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.Select;
 
+/**
+ * Create by Ewan.Hardingham on the 5th Nov 2019
+ */
+
 public class RegistrationPage extends SourcePage {
 
     private static final By MR_RADIO_BUTTON = By.cssSelector("#id_gender1");
