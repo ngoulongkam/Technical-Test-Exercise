@@ -31,7 +31,7 @@ PageObjects: OO approach that provides the automation behaviour for each page in
 - DressesPage
 - CheckoutPage
 Tests: 
-- TestSuite (Used to run all tests at once. !!Run this method!!)
+- TestSuite (Used to run all tests at once. **Run this method**)
 - Registration
 - SignIn
 - UserJourney
@@ -40,7 +40,10 @@ Within the PageObjects package you will find all the relevant source code used t
 Selenium actions. While the Tests package follows an Arrange, Act and Assert principle; individual 
 unit tests that focus on each of the requirements set. Instances of the pages are declared,
 methods called and tests asserted.
-## Known Bugs
+### Known Bugs
 1. When ordering Dresses, on the product page, the site becomes unresponsive and stuck on 'Loading'. This means
-the 'addMostExpensiveDressToCart' fails. However, an assertion error message is provided.
-2. When a user logs back in, the website fails to remember which items had been in their cart. Therefore, the 
+the 'UserJourney: addMostExpensiveDressToCart' fails. However, an assertion error message is provided.
+2. When a user logs back in, the website fails to remember which items had been in their cart. Therefore, the 'UserJourney: checkProductAlwaysRemainsInUserCart' also fails.
+## Author
+Ewan Hardingham
+ewan.hardingham@ten10.com
