@@ -21,3 +21,26 @@ IDE: IntelliJ IDEA (Any compatible IDEs are fine)
 ```
 Java was chosen as the prefered language of choice, as it is the language I have developed the most during my time with Ten10. Additionally, the use of Maven allows all dependencies to be managed easily within the same environment. The combination of Selenium and ChromeDriver allows for automation to be completed within one of the most popular user browsers. The inclusion of JUnit external libary allows for repeatable unit tests to be written and handles test validation.
 ## Automated Tests
+Within the project's source files, you will find the following:
+```
+PageObjects: OO approach that provides the automation behaviour for each page interacted with. 
+- SourcePage
+- HomePage
+- SignInPage
+- RegistrationPage
+- DressesPage
+- CheckoutPage
+Tests: 
+- TestSuite (Used to run all tests at once. !!Run this method!!)
+- Registration
+- SignIn
+- UserJourney
+```
+Within the PageObjects package you will find all the relevant source code used to complete
+Selenium actions. While the Tests package follows an Arrange, Act and Assert principle; individual 
+unit tests that focus on each of the requirements set. Instances of the pages are declared,
+methods called and tests asserted.
+## Known Bugs
+1. When ordering Dresses, on the product page, the site becomes unresponsive and stuck on 'Loading'. This means
+the 'addMostExpensiveDressToCart' fails. However, an assertion error message is provided.
+2. When a user logs back in, the website fails to remember which items had been in their cart. Therefore, the 
